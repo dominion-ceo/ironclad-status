@@ -1,0 +1,11 @@
+{
+  "brand": "Ironclad Sportfishing",
+  "comment": "Ironclad Sportfishing public hosts only. Separate company from DPS: do not add dominionprotectivesolutions.com or pitetti.co hosts here.",
+  "checks": [
+    {"id": "website", "name": "Website", "url": "https://ironcladsportfishing.com/", "expect": [200], "note": "Public website"},
+    {"id": "app", "name": "Crew Portal", "url": "https://app.ironcladsportfishing.com/", "expect": [200, 301, 302, 303, 307, 308], "note": "Crew and booking app. A redirect to sign-in means it is serving."},
+    {"id": "sign", "name": "E-Sign", "url": "https://sign.ironcladsportfishing.com/", "expect": [200, 301, 302, 303, 307, 308], "note": "Waivers and documents"},
+    {"id": "reviews", "name": "Reviews", "url": "https://reviews.ironcladsportfishing.com/", "expect": [200, 301, 302, 307, 308], "note": "Customer reviews"},
+    {"id": "maps", "name": "Maps", "url": "https://maps.ironcladsportfishing.com/", "expect": [200, 301, 302, 307, 308], "note": "Trip maps"}
+  ]
+}
